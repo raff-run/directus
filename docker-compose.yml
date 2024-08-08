@@ -24,7 +24,8 @@ services:
       DB_PASSWORD: "ZUNsYG8NL7NWtcDMm8w8"
       WEBSOCKETS_ENABLED: "true"
       EXTENSIONS_AUTO_RELOAD: "true"
-
+      CHOKIDAR_USEPOLLING: "true"
+      CHOKIDAR_INTERVAL: "1000"
   db:
     image: "mcr.microsoft.com/azure-sql-edge"
     ports:
